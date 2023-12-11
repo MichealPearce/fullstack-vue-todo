@@ -2,8 +2,10 @@ import { defineConfig } from "vite";
 import { VitePluginNode } from "vite-plugin-node";
 
 export default defineConfig({
-	envPrefix: ["SERVER_", "CLIENT_"],
 	envDir: "../",
+	envPrefix: ["SERVER_", "CLIENT_"],
+
+	publicDir: false,
 
 	build: {
 		emptyOutDir: true,

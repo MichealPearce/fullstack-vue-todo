@@ -5,10 +5,10 @@
 // Read more: https://github.com/vuejs/core/pull/3399
 export {}
 
-declare module 'vue' {
-  export interface GlobalComponents {
-    HelloWorld: typeof import('./../components/HelloWorld.vue')['default']
-    RouterLink: typeof import('vue-router')['RouterLink']
-    RouterView: typeof import('vue-router')['RouterView']
-  }
+declare module "vue" {
+	export interface GlobalComponents {
+		AppPage: typeof import("./../components/App/Page.vue")["default"];
+		RouterLink: typeof import("vue-router")["RouterLink"];
+		RouterView: typeof import("vue-router")["RouterView"];
+	}
 }

@@ -17,11 +17,14 @@ onMounted(async () => {
 
 <template>
 	<div class="index-page">
-		<h1>Hello, World!</h1>
+		<h1>Index Page</h1>
 	</div>
 </template>
 
 <style lang="scss" scoped>
 .index-page {
+	@include flex(column, center, center);
+	width: 100vw;
+	height: 100vh;
 }
 </style>

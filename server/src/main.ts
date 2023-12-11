@@ -12,7 +12,7 @@ const app = fastify({
 	const serverURL = new URL(env("SERVER_URL", "http://localhost:3001"));
 
 	app.get("/api/test", async () => {
-		return { hello: "james" };
+		return "Hello, World!";
 	});
 
 	await app.listen({
